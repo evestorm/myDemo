@@ -17,6 +17,11 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
+    NSLog(@"pch文件中的宏ABC：%i",ABC);
+    // [UIImage imageTest];
+    
+    // NSLog比较耗资源
+    SWLog(@"%s",__func__);
 }
 
 

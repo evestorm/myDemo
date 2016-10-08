@@ -15,6 +15,8 @@
 		B68721281DA8D2FC00CCB122 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B68721261DA8D2FC00CCB122 /* LaunchScreen.storyboard */; };
 		B68721331DA8D2FC00CCB122 /* pchTests.m in Sources */ = {isa = PBXBuildFile; fileRef = B68721321DA8D2FC00CCB122 /* pchTests.m */; };
 		B687213E1DA8D2FD00CCB122 /* pchUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = B687213D1DA8D2FD00CCB122 /* pchUITests.m */; };
+		B687214E1DA8DAE400CCB122 /* UIImage+image.m in Sources */ = {isa = PBXBuildFile; fileRef = B687214D1DA8DAE400CCB122 /* UIImage+image.m */; };
+		B68721511DA8DFE100CCB122 /* test.c in Sources */ = {isa = PBXBuildFile; fileRef = B687214F1DA8DFE100CCB122 /* test.c */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +53,11 @@
 		B68721391DA8D2FD00CCB122 /* pchUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = pchUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		B687213D1DA8D2FD00CCB122 /* pchUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = pchUITests.m; sourceTree = "<group>"; };
 		B687213F1DA8D2FD00CCB122 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B687214B1DA8D52700CCB122 /* pch.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = pch.pch; sourceTree = "<group>"; };
+		B687214C1DA8DAE400CCB122 /* UIImage+image.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+image.h"; sourceTree = "<group>"; };
+		B687214D1DA8DAE400CCB122 /* UIImage+image.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+image.m"; sourceTree = "<group>"; };
+		B687214F1DA8DFE100CCB122 /* test.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = test.c; sourceTree = "<group>"; };
+		B68721501DA8DFE100CCB122 /* test.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = test.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -110,6 +117,11 @@
 				B68721261DA8D2FC00CCB122 /* LaunchScreen.storyboard */,
 				B68721291DA8D2FC00CCB122 /* Info.plist */,
 				B68721181DA8D2FB00CCB122 /* Supporting Files */,
+				B687214B1DA8D52700CCB122 /* pch.pch */,
+				B687214C1DA8DAE400CCB122 /* UIImage+image.h */,
+				B687214D1DA8DAE400CCB122 /* UIImage+image.m */,
+				B687214F1DA8DFE100CCB122 /* test.c */,
+				B68721501DA8DFE100CCB122 /* test.h */,
 			);
 			path = pch;
 			sourceTree = "<group>";
@@ -276,7 +288,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B68721511DA8DFE100CCB122 /* test.c in Sources */,
 				B68721201DA8D2FC00CCB122 /* ViewController.m in Sources */,
+				B687214E1DA8DAE400CCB122 /* UIImage+image.m in Sources */,
 				B687211D1DA8D2FC00CCB122 /* AppDelegate.m in Sources */,
 				B687211A1DA8D2FB00CCB122 /* main.m in Sources */,
 			);
@@ -428,6 +442,8 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = 45C77WAEL5;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = pch/pch.pch;
 				INFOPLIST_FILE = pch/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = www.eve.com.pch;
@@ -440,6 +456,8 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = 45C77WAEL5;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = pch/pch.pch;
 				INFOPLIST_FILE = pch/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = www.eve.com.pch;

@@ -1,0 +1,42 @@
+//
+//  pch.pch
+//  pch
+//
+//  Created by evestorm on 16/10/8.
+//  Copyright © 2016年 evestorm. All rights reserved.
+//
+
+// pch注意点：1. pch需要提前编译
+// 工程设置界面 -->
+// Build Settings -->
+// 选择all -->
+// 搜索框内搜索:prefix -->
+// 找到 Apple LLVM 的 Precompile Prefix Header，选择Yes -->
+// 下面的 Prefix Header 填写路径(苹果自动跟踪路径到项目的 .xcodeproj 文件的同级目录下) -->
+// 填写路径：pch/pch.pch
+
+// 2. 需要做一些判断,判断当前有没有c文件，如果有c，就不导入OC的语法
+// __OBJC__每个OC文件都会自动定义这个宏
+#ifdef __OBJC__
+
+// pch作用:
+// 1. 存放一些公用的宏
+#define ABC 10
+// 2. 存放一些公用的头文件
+#import "UIImage+image.h"
+// 3. 自定义Log（输出日志）
+// ...          宏里面表示可变参数
+// __VA_ARGS__  宏里面表示函数里面的可变参数
+// #define SWLog(...) NSLog(__VA_ARGS__)
+// 发布的时候：
+#ifdef DEBUG // 调试
+
+#define SWLog(...) NSLog(__VA_ARGS__)
+
+#else // 发布
+
+#define SWLog(...)
+
+#endif
+
+#endif
