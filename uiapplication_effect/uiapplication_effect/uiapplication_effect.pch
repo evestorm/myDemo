@@ -1,0 +1,11 @@
+//
+//  uiapplication_effect.pch
+//  uiapplication_effect
+//
+//  Created by evestorm on 16/10/9.
+//  Copyright © 2016年 evestorm. All rights reserved.
+//
+
+#define IS_IOS7_OR_LATER    ([[[UIDevice currentDevice] systemVersion] floatValue] >= 7.0)
+#define IS_IOS8_OR_LATER    ([[[UIDevice currentDevice] systemVersion] floatValue] >= 8.0)
+#define IS_IOS10_OR_LATER    ([[[UIDevice currentDevice] systemVersion] floatValue] >= 10.0)

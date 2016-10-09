@@ -51,6 +51,7 @@
 		B68721C11DA9D20F00CCB122 /* uiapplication_effectUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = uiapplication_effectUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		B68721C51DA9D20F00CCB122 /* uiapplication_effectUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = uiapplication_effectUITests.m; sourceTree = "<group>"; };
 		B68721C71DA9D20F00CCB122 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B6944D961DA9DD4700CE4326 /* uiapplication_effect.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = uiapplication_effect.pch; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -110,6 +111,7 @@
 				B68721AE1DA9D20F00CCB122 /* LaunchScreen.storyboard */,
 				B68721B11DA9D20F00CCB122 /* Info.plist */,
 				B68721A01DA9D20F00CCB122 /* Supporting Files */,
+				B6944D961DA9DD4700CE4326 /* uiapplication_effect.pch */,
 			);
 			path = uiapplication_effect;
 			sourceTree = "<group>";
@@ -428,6 +430,8 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = 45C77WAEL5;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = uiapplication_effect/uiapplication_effect.pch;
 				INFOPLIST_FILE = uiapplication_effect/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "www.eve.com.uiapplication-effect";
@@ -440,6 +444,8 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = 45C77WAEL5;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = uiapplication_effect/uiapplication_effect.pch;
 				INFOPLIST_FILE = uiapplication_effect/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "www.eve.com.uiapplication-effect";
@@ -516,6 +522,7 @@
 				B68721CC1DA9D20F00CCB122 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		B68721CD1DA9D20F00CCB122 /* Build configuration list for PBXNativeTarget "uiapplication_effectTests" */ = {
 			isa = XCConfigurationList;
@@ -524,6 +531,7 @@
 				B68721CF1DA9D20F00CCB122 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		B68721D01DA9D20F00CCB122 /* Build configuration list for PBXNativeTarget "uiapplication_effectUITests" */ = {
 			isa = XCConfigurationList;
@@ -532,6 +540,7 @@
 				B68721D21DA9D20F00CCB122 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
