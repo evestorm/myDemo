@@ -14,6 +14,11 @@
 
 @implementation AppDelegate
 
+// delegate可处理的事件包括：
+// 1. 应用程序的生命周期事件（如程序启动和关闭）
+// 2. 系统事件（如来电）
+// 3. 内存警告
+
 // AppDelegate：监听应用程序的生命周期
 // 以下方法就是应用程序的生命周期方法
 
@@ -25,14 +30,14 @@
     return YES;
 }
 
-// 当应用程序失去焦点的时候调用
+// 当应用程序即将失去焦点的时候调用
 - (void)applicationWillResignActive:(UIApplication *)application {
     // Sent when the application is about to move from active to inactive state. This can occur for certain types of temporary interruptions (such as an incoming phone call or SMS message) or when the user quits the application and it begins the transition to the background state.
     // Use this method to pause ongoing tasks, disable timers, and invalidate graphics rendering callbacks. Games should use this method to pause the game.
     NSLog(@"%s",__func__);
 }
 
-// 当应用程序进入后台的时候调用
+// 当应用程序完全进入后台的时候调用
 - (void)applicationDidEnterBackground:(UIApplication *)application {
     // Use this method to release shared resources, save user data, invalidate timers, and store enough application state information to restore your application to its current state in case it is terminated later.
     // If your application supports background execution, this method is called instead of applicationWillTerminate: when the user quits.
