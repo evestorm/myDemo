@@ -3,6 +3,13 @@
    version = "1.0">
    <Group
       location = "container:"
+      name = "UIApplication&#x4f5c;&#x7528;">
+      <FileRef
+         location = "group:uiapplication_effect/uiapplication_effect.xcodeproj">
+      </FileRef>
+   </Group>
+   <Group
+      location = "container:"
       name = "UIApplication&#x5355;&#x7c92;">
       <FileRef
          location = "group:uiapplication_singleton/uiapplication_singleton.xcodeproj">
