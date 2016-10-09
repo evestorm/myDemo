@@ -10,8 +10,14 @@
 #import <UserNotifications/UserNotifications.h>
 
 @interface ViewController ()<UNUserNotificationCenterDelegate>
-// btn
-@property (nonatomic,strong) UIButton *btn;
+// 上网
+@property (nonatomic,strong) UIButton *internetBtn;
+// 打电话
+@property (nonatomic,strong) UIButton *callBtn;
+// 发短信
+@property (nonatomic,strong) UIButton *messageBtn;
+// 发邮件
+@property (nonatomic,strong) UIButton *emailBtn;
 // app
 @property (nonatomic,strong) UIApplication *app;
 @end
@@ -21,7 +27,10 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
-    [self.view addSubview:self.btn];
+    [self.view addSubview:self.internetBtn];
+    [self.view addSubview:self.callBtn];
+    [self.view addSubview:self.messageBtn];
+    [self.view addSubview:self.emailBtn];
     // 0. 获取应用程序的象征
     UIApplication *app = [UIApplication sharedApplication];
     _app = app;
@@ -79,7 +88,7 @@
 //}
 
 // 4. 打电话，发短信，打开网页
-- (void)openURL {
+- (void)internetButtonClicked {
     // URL:资源的唯一标识
     // https://www.baidu.com
     // URL:协议头：//资源路径
@@ -92,16 +101,67 @@
     }
 }
 
-- (UIButton *)btn {
-    if (!_btn) {
-        _btn = [[UIButton alloc] initWithFrame:CGRectMake(100, 100, 100, 40)];
-        [_btn setTitle:@"打开网页" forState:(UIControlStateNormal)];
-        [_btn setTitleColor:[UIColor blackColor] forState:(UIControlStateNormal)];
-        _btn.backgroundColor = [UIColor yellowColor];
-        [_btn addTarget:self action:@selector(openURL) forControlEvents:(UIControlEventTouchUpInside)];
-    }
-    return _btn;
+- (void)callButtonClicked {
+    // 电话号码
+    NSString *phoneNumber=@"13888888888";
+    // 直接拨打电话
+    //NSString *url=[NSString stringWithFormat:@"tel://%@",phoneNumber];
+    // 会提示用户是否拨打电话
+    NSString *url=[NSString stringWithFormat:@"telprompt://%@",phoneNumber];
+    [_app openURL:[NSURL URLWithString:url]];
 }
 
+- (void)messageButtonClicked {
+    NSString *phoneNumber=@"13888888888";
+    NSString *url=[NSString stringWithFormat:@"sms://%@",phoneNumber];
+    [_app openURL:[NSURL URLWithString:url]];
+}
+
+- (void)emailButtonClicked{
+    NSString *mailAddress=@"123456789@qq.com";
+    NSString *url=[NSString stringWithFormat:@"mailto://%@",mailAddress];
+    [_app openURL:[NSURL URLWithString:url]];
+}
+
+- (UIButton *)internetBtn {
+    if (!_internetBtn) {
+        _internetBtn = [[UIButton alloc] initWithFrame:CGRectMake(100, 100, 100, 40)];
+        [_internetBtn setTitle:@"上网" forState:(UIControlStateNormal)];
+        [_internetBtn setTitleColor:[UIColor blackColor] forState:(UIControlStateNormal)];
+        _internetBtn.backgroundColor = [UIColor greenColor];
+        [_internetBtn addTarget:self action:@selector(internetButtonClicked) forControlEvents:(UIControlEventTouchUpInside)];
+    }
+    return _internetBtn;
+}
+- (UIButton *)callBtn {
+    if (!_callBtn) {
+        _callBtn = [[UIButton alloc] initWithFrame:CGRectMake(100, 160, 100, 40)];
+        [_callBtn setTitle:@"电话" forState:(UIControlStateNormal)];
+        [_callBtn setTitleColor:[UIColor blackColor] forState:(UIControlStateNormal)];
+        _callBtn.backgroundColor = [UIColor grayColor];
+        [_callBtn addTarget:self action:@selector(callButtonClicked) forControlEvents:(UIControlEventTouchUpInside)];
+    }
+    return _callBtn;
+}
+- (UIButton *)messageBtn {
+    if (!_messageBtn) {
+        _messageBtn = [[UIButton alloc] initWithFrame:CGRectMake(100, 210, 100, 40)];
+        [_messageBtn setTitle:@"短信" forState:(UIControlStateNormal)];
+        [_messageBtn setTitleColor:[UIColor blackColor] forState:(UIControlStateNormal)];
+        _messageBtn.backgroundColor = [UIColor redColor];
+        [_messageBtn addTarget:self action:@selector(messageButtonClicked) forControlEvents:(UIControlEventTouchUpInside)];
+    }
+    return _messageBtn;
+}
+- (UIButton *)emailBtn {
+    if (!_emailBtn) {
+        _emailBtn = [[UIButton alloc] initWithFrame:CGRectMake(100, 270, 100, 40)];
+        [_emailBtn setTitle:@"邮件" forState:(UIControlStateNormal)];
+        [_emailBtn setTitleColor:[UIColor blackColor] forState:(UIControlStateNormal)];
+        _emailBtn.backgroundColor = [UIColor yellowColor];
+        [_emailBtn addTarget:self action:@selector(emailButtonClicked) forControlEvents:(UIControlEventTouchUpInside)];
+    }
+    return _emailBtn;
+}
 
 @end
