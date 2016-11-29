@@ -2,6 +2,13 @@
 <Workspace
    version = "1.0">
    <Group
+      location = "group:Quartz2D"
+      name = "Quartz2D">
+      <FileRef
+         location = "group:Quartz2D/Quartz2D.xcodeproj">
+      </FileRef>
+   </Group>
+   <Group
       location = "group:&#x624b;&#x52bf;&#x8bc6;&#x522b;"
       name = "&#x624b;&#x52bf;&#x8bc6;&#x522b;">
       <FileRef
