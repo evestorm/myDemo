@@ -2,6 +2,13 @@
 <Workspace
    version = "1.0">
    <Group
+      location = "group:UITouch"
+      name = "UITouch">
+      <FileRef
+         location = "group:UITouch/UITouch.xcodeproj">
+      </FileRef>
+   </Group>
+   <Group
       location = "group:transform"
       name = "transform">
       <FileRef
