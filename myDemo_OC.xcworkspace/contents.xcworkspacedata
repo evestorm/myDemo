@@ -2,6 +2,13 @@
 <Workspace
    version = "1.0">
    <Group
+      location = "group:&#x624b;&#x52bf;&#x8bc6;&#x522b;"
+      name = "&#x624b;&#x52bf;&#x8bc6;&#x522b;">
+      <FileRef
+         location = "group:&#x624b;&#x52bf;&#x8bc6;&#x522b;/&#x624b;&#x52bf;&#x8bc6;&#x522b;.xcodeproj">
+      </FileRef>
+   </Group>
+   <Group
       location = "group:UITouch"
       name = "UITouch">
       <FileRef
