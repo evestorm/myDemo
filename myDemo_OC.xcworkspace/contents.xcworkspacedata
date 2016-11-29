@@ -2,6 +2,13 @@
 <Workspace
    version = "1.0">
    <Group
+      location = "group:&#x5f52;&#x6863;&#x89e3;&#x6863;"
+      name = "&#x5f52;&#x6863;&#x89e3;&#x6863;">
+      <FileRef
+         location = "group:&#x5f52;&#x6863;&#x89e3;&#x6863;/&#x5f52;&#x6863;&#x89e3;&#x6863;.xcodeproj">
+      </FileRef>
+   </Group>
+   <Group
       location = "group:CommonAlertView"
       name = "CommonAlertView">
       <FileRef
