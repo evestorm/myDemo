@@ -8,6 +8,7 @@
 
 #import "ViewController.h"
 #import "BaseGraphViewController.h"
+#import "DownloadProgressBarViewController.h"
 
 @interface ViewController ()<UITableViewDelegate,UITableViewDataSource>
 // tableView
@@ -44,6 +45,9 @@
     if (indexPath.row == 0) {
         BaseGraphViewController *baseGraph = [[BaseGraphViewController alloc] init];
         [self.navigationController pushViewController:baseGraph animated:YES];
+    } else if (indexPath.row == 1) {
+        DownloadProgressBarViewController *progress = [[DownloadProgressBarViewController alloc] init];
+        [self.navigationController pushViewController:progress animated:YES];
     }
 }
 
@@ -59,7 +63,7 @@
 - (NSArray *)listArray {
     if (!_listArray) {
         _listArray = [[NSArray alloc] init];
-        _listArray = @[@"基本图形绘制"];
+        _listArray = @[@"基本图形绘制",@"进度条(重绘)"];
     }
     return _listArray;
 }

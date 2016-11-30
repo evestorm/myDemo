@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		FA4D0A661DEEB9960038244B /* DownloadProgressBarViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FA4D0A641DEEB9960038244B /* DownloadProgressBarViewController.m */; };
+		FA4D0A671DEEB9960038244B /* DownloadProgressBarViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = FA4D0A651DEEB9960038244B /* DownloadProgressBarViewController.xib */; };
+		FA4D0A6B1DEEC50B0038244B /* DownGrayView.m in Sources */ = {isa = PBXBuildFile; fileRef = FA4D0A6A1DEEC50B0038244B /* DownGrayView.m */; };
 		FAF811AF1DEDCD4D007FE470 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = FAF811AE1DEDCD4D007FE470 /* main.m */; };
 		FAF811B21DEDCD4D007FE470 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = FAF811B11DEDCD4D007FE470 /* AppDelegate.m */; };
 		FAF811B51DEDCD4D007FE470 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FAF811B41DEDCD4D007FE470 /* ViewController.m */; };
@@ -39,6 +42,11 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		FA4D0A631DEEB9960038244B /* DownloadProgressBarViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DownloadProgressBarViewController.h; sourceTree = "<group>"; };
+		FA4D0A641DEEB9960038244B /* DownloadProgressBarViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DownloadProgressBarViewController.m; sourceTree = "<group>"; };
+		FA4D0A651DEEB9960038244B /* DownloadProgressBarViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DownloadProgressBarViewController.xib; sourceTree = "<group>"; };
+		FA4D0A691DEEC50B0038244B /* DownGrayView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DownGrayView.h; sourceTree = "<group>"; };
+		FA4D0A6A1DEEC50B0038244B /* DownGrayView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DownGrayView.m; sourceTree = "<group>"; };
 		FAF811AA1DEDCD4D007FE470 /* Quartz2D.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Quartz2D.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FAF811AE1DEDCD4D007FE470 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		FAF811B01DEDCD4D007FE470 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -89,6 +97,18 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		FA4D0A681DEEB99D0038244B /* 下载进度条(重绘) */ = {
+			isa = PBXGroup;
+			children = (
+				FA4D0A631DEEB9960038244B /* DownloadProgressBarViewController.h */,
+				FA4D0A641DEEB9960038244B /* DownloadProgressBarViewController.m */,
+				FA4D0A651DEEB9960038244B /* DownloadProgressBarViewController.xib */,
+				FA4D0A691DEEC50B0038244B /* DownGrayView.h */,
+				FA4D0A6A1DEEC50B0038244B /* DownGrayView.m */,
+			);
+			name = "下载进度条(重绘)";
+			sourceTree = "<group>";
+		};
 		FAF811A11DEDCD4D007FE470 = {
 			isa = PBXGroup;
 			children = (
@@ -112,6 +132,7 @@
 		FAF811AC1DEDCD4D007FE470 /* Quartz2D */ = {
 			isa = PBXGroup;
 			children = (
+				FA4D0A681DEEB99D0038244B /* 下载进度条(重绘) */,
 				FAF811EE1DEDD4BB007FE470 /* 基本图形绘制 */,
 				FAF811B01DEDCD4D007FE470 /* AppDelegate.h */,
 				FAF811B11DEDCD4D007FE470 /* AppDelegate.m */,
@@ -276,6 +297,7 @@
 				FAF811BD1DEDCD4D007FE470 /* LaunchScreen.storyboard in Resources */,
 				FAF811BA1DEDCD4D007FE470 /* Assets.xcassets in Resources */,
 				FAF811B81DEDCD4D007FE470 /* Main.storyboard in Resources */,
+				FA4D0A671DEEB9960038244B /* DownloadProgressBarViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -303,9 +325,11 @@
 				FAF811ED1DEDD4A8007FE470 /* QuaRedView.m in Sources */,
 				FAF811E61DEDD246007FE470 /* BaseGraphViewController.m in Sources */,
 				FAF811B51DEDCD4D007FE470 /* ViewController.m in Sources */,
+				FA4D0A661DEEB9960038244B /* DownloadProgressBarViewController.m in Sources */,
 				FAF811EA1DEDD3E3007FE470 /* NavigationViewController.m in Sources */,
 				FAF811B21DEDCD4D007FE470 /* AppDelegate.m in Sources */,
 				FAF811AF1DEDCD4D007FE470 /* main.m in Sources */,
+				FA4D0A6B1DEEC50B0038244B /* DownGrayView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -537,6 +561,7 @@
 				FAF811D91DEDCD4D007FE470 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		FAF811DA1DEDCD4D007FE470 /* Build configuration list for PBXNativeTarget "Quartz2DTests" */ = {
 			isa = XCConfigurationList;
@@ -545,6 +570,7 @@
 				FAF811DC1DEDCD4D007FE470 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		FAF811DD1DEDCD4D007FE470 /* Build configuration list for PBXNativeTarget "Quartz2DUITests" */ = {
 			isa = XCConfigurationList;
@@ -553,6 +579,7 @@
 				FAF811DF1DEDCD4D007FE470 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
