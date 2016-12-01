@@ -10,6 +10,8 @@
 		FA4D0A661DEEB9960038244B /* DownloadProgressBarViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FA4D0A641DEEB9960038244B /* DownloadProgressBarViewController.m */; };
 		FA4D0A671DEEB9960038244B /* DownloadProgressBarViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = FA4D0A651DEEB9960038244B /* DownloadProgressBarViewController.xib */; };
 		FA4D0A6B1DEEC50B0038244B /* DownGrayView.m in Sources */ = {isa = PBXBuildFile; fileRef = FA4D0A6A1DEEC50B0038244B /* DownGrayView.m */; };
+		FAF811601DF0113000EA16CE /* WaterMarkViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FAF8115E1DF0113000EA16CE /* WaterMarkViewController.m */; };
+		FAF811611DF0113000EA16CE /* WaterMarkViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = FAF8115F1DF0113000EA16CE /* WaterMarkViewController.xib */; };
 		FAF811AF1DEDCD4D007FE470 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = FAF811AE1DEDCD4D007FE470 /* main.m */; };
 		FAF811B21DEDCD4D007FE470 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = FAF811B11DEDCD4D007FE470 /* AppDelegate.m */; };
 		FAF811B51DEDCD4D007FE470 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FAF811B41DEDCD4D007FE470 /* ViewController.m */; };
@@ -51,6 +53,9 @@
 		FA4D0A651DEEB9960038244B /* DownloadProgressBarViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DownloadProgressBarViewController.xib; sourceTree = "<group>"; };
 		FA4D0A691DEEC50B0038244B /* DownGrayView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DownGrayView.h; sourceTree = "<group>"; };
 		FA4D0A6A1DEEC50B0038244B /* DownGrayView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DownGrayView.m; sourceTree = "<group>"; };
+		FAF8115D1DF0113000EA16CE /* WaterMarkViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WaterMarkViewController.h; sourceTree = "<group>"; };
+		FAF8115E1DF0113000EA16CE /* WaterMarkViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WaterMarkViewController.m; sourceTree = "<group>"; };
+		FAF8115F1DF0113000EA16CE /* WaterMarkViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = WaterMarkViewController.xib; sourceTree = "<group>"; };
 		FAF811AA1DEDCD4D007FE470 /* Quartz2D.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Quartz2D.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FAF811AE1DEDCD4D007FE470 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		FAF811B01DEDCD4D007FE470 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -120,6 +125,16 @@
 			name = "下载进度条(重绘)";
 			sourceTree = "<group>";
 		};
+		FAF8115C1DF010F100EA16CE /* 图片加水印 */ = {
+			isa = PBXGroup;
+			children = (
+				FAF8115D1DF0113000EA16CE /* WaterMarkViewController.h */,
+				FAF8115E1DF0113000EA16CE /* WaterMarkViewController.m */,
+				FAF8115F1DF0113000EA16CE /* WaterMarkViewController.xib */,
+			);
+			name = "图片加水印";
+			sourceTree = "<group>";
+		};
 		FAF811A11DEDCD4D007FE470 = {
 			isa = PBXGroup;
 			children = (
@@ -144,6 +159,7 @@
 		FAF811AC1DEDCD4D007FE470 /* Quartz2D */ = {
 			isa = PBXGroup;
 			children = (
+				FAF8115C1DF010F100EA16CE /* 图片加水印 */,
 				FAFB1C9C1DEF034900E099B1 /* 绘制文字 */,
 				FA4D0A681DEEB99D0038244B /* 下载进度条(重绘) */,
 				FAF811EE1DEDD4BB007FE470 /* 基本图形绘制 */,
@@ -326,6 +342,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FAF811611DF0113000EA16CE /* WaterMarkViewController.xib in Resources */,
 				FAF811E71DEDD246007FE470 /* BaseGraphViewController.xib in Resources */,
 				FAFB1CA11DEF038F00E099B1 /* RenderTextViewController.xib in Resources */,
 				FAF811BD1DEDCD4D007FE470 /* LaunchScreen.storyboard in Resources */,
@@ -359,6 +376,7 @@
 				FAF811ED1DEDD4A8007FE470 /* QuaRedView.m in Sources */,
 				FAF811E61DEDD246007FE470 /* BaseGraphViewController.m in Sources */,
 				FAF811B51DEDCD4D007FE470 /* ViewController.m in Sources */,
+				FAF811601DF0113000EA16CE /* WaterMarkViewController.m in Sources */,
 				FAFB1CA41DEF042F00E099B1 /* RenderTextView.m in Sources */,
 				FA4D0A661DEEB9960038244B /* DownloadProgressBarViewController.m in Sources */,
 				FAF811EA1DEDD3E3007FE470 /* NavigationViewController.m in Sources */,

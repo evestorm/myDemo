@@ -10,6 +10,7 @@
 #import "BaseGraphViewController.h"
 #import "DownloadProgressBarViewController.h"
 #import "RenderTextViewController.h"
+#import "WaterMarkViewController.h"
 
 @interface ViewController ()<UITableViewDelegate,UITableViewDataSource>
 // tableView
@@ -52,6 +53,9 @@
     } else if (indexPath.row == 2) {
         RenderTextViewController *renderText = [[RenderTextViewController alloc] init];
         [self.navigationController pushViewController:renderText animated:YES];
+    } else if (indexPath.row == 3) {
+        WaterMarkViewController *waterMark = [[WaterMarkViewController alloc] init];
+        [self.navigationController pushViewController:waterMark animated:YES];
     }
 }
 
@@ -67,7 +71,7 @@
 - (NSArray *)listArray {
     if (!_listArray) {
         _listArray = [[NSArray alloc] init];
-        _listArray = @[@"基本图形绘制",@"进度条(重绘)",@"绘制文字，图片"];
+        _listArray = @[@"基本图形绘制",@"进度条(重绘)",@"绘制文字，图片",@"图片加载水印+裁剪图片"];
     }
     return _listArray;
 }
