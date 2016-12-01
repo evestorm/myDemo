@@ -22,6 +22,10 @@
 		FAF811E71DEDD246007FE470 /* BaseGraphViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = FAF811E51DEDD246007FE470 /* BaseGraphViewController.xib */; };
 		FAF811EA1DEDD3E3007FE470 /* NavigationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FAF811E91DEDD3E3007FE470 /* NavigationViewController.m */; };
 		FAF811ED1DEDD4A8007FE470 /* QuaRedView.m in Sources */ = {isa = PBXBuildFile; fileRef = FAF811EC1DEDD4A8007FE470 /* QuaRedView.m */; };
+		FAFB1CA01DEF038F00E099B1 /* RenderTextViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FAFB1C9E1DEF038F00E099B1 /* RenderTextViewController.m */; };
+		FAFB1CA11DEF038F00E099B1 /* RenderTextViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = FAFB1C9F1DEF038F00E099B1 /* RenderTextViewController.xib */; };
+		FAFB1CA41DEF042F00E099B1 /* RenderTextView.m in Sources */ = {isa = PBXBuildFile; fileRef = FAFB1CA31DEF042F00E099B1 /* RenderTextView.m */; };
+		FAFB1CA71DEF04EF00E099B1 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FAFB1CA61DEF04EF00E099B1 /* UIKit.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -70,6 +74,12 @@
 		FAF811E91DEDD3E3007FE470 /* NavigationViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NavigationViewController.m; sourceTree = "<group>"; };
 		FAF811EB1DEDD4A8007FE470 /* QuaRedView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QuaRedView.h; sourceTree = "<group>"; };
 		FAF811EC1DEDD4A8007FE470 /* QuaRedView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QuaRedView.m; sourceTree = "<group>"; };
+		FAFB1C9D1DEF038F00E099B1 /* RenderTextViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RenderTextViewController.h; sourceTree = "<group>"; };
+		FAFB1C9E1DEF038F00E099B1 /* RenderTextViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RenderTextViewController.m; sourceTree = "<group>"; };
+		FAFB1C9F1DEF038F00E099B1 /* RenderTextViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = RenderTextViewController.xib; sourceTree = "<group>"; };
+		FAFB1CA21DEF042F00E099B1 /* RenderTextView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RenderTextView.h; sourceTree = "<group>"; };
+		FAFB1CA31DEF042F00E099B1 /* RenderTextView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RenderTextView.m; sourceTree = "<group>"; };
+		FAFB1CA61DEF04EF00E099B1 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -77,6 +87,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FAFB1CA71DEF04EF00E099B1 /* UIKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -116,6 +127,7 @@
 				FAF811C61DEDCD4D007FE470 /* Quartz2DTests */,
 				FAF811D11DEDCD4D007FE470 /* Quartz2DUITests */,
 				FAF811AB1DEDCD4D007FE470 /* Products */,
+				FAFB1CA51DEF04EE00E099B1 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -132,6 +144,7 @@
 		FAF811AC1DEDCD4D007FE470 /* Quartz2D */ = {
 			isa = PBXGroup;
 			children = (
+				FAFB1C9C1DEF034900E099B1 /* 绘制文字 */,
 				FA4D0A681DEEB99D0038244B /* 下载进度条(重绘) */,
 				FAF811EE1DEDD4BB007FE470 /* 基本图形绘制 */,
 				FAF811B01DEDCD4D007FE470 /* AppDelegate.h */,
@@ -185,6 +198,26 @@
 				FAF811E51DEDD246007FE470 /* BaseGraphViewController.xib */,
 			);
 			name = "基本图形绘制";
+			sourceTree = "<group>";
+		};
+		FAFB1C9C1DEF034900E099B1 /* 绘制文字 */ = {
+			isa = PBXGroup;
+			children = (
+				FAFB1C9D1DEF038F00E099B1 /* RenderTextViewController.h */,
+				FAFB1C9E1DEF038F00E099B1 /* RenderTextViewController.m */,
+				FAFB1C9F1DEF038F00E099B1 /* RenderTextViewController.xib */,
+				FAFB1CA21DEF042F00E099B1 /* RenderTextView.h */,
+				FAFB1CA31DEF042F00E099B1 /* RenderTextView.m */,
+			);
+			name = "绘制文字";
+			sourceTree = "<group>";
+		};
+		FAFB1CA51DEF04EE00E099B1 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				FAFB1CA61DEF04EF00E099B1 /* UIKit.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -294,6 +327,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				FAF811E71DEDD246007FE470 /* BaseGraphViewController.xib in Resources */,
+				FAFB1CA11DEF038F00E099B1 /* RenderTextViewController.xib in Resources */,
 				FAF811BD1DEDCD4D007FE470 /* LaunchScreen.storyboard in Resources */,
 				FAF811BA1DEDCD4D007FE470 /* Assets.xcassets in Resources */,
 				FAF811B81DEDCD4D007FE470 /* Main.storyboard in Resources */,
@@ -325,10 +359,12 @@
 				FAF811ED1DEDD4A8007FE470 /* QuaRedView.m in Sources */,
 				FAF811E61DEDD246007FE470 /* BaseGraphViewController.m in Sources */,
 				FAF811B51DEDCD4D007FE470 /* ViewController.m in Sources */,
+				FAFB1CA41DEF042F00E099B1 /* RenderTextView.m in Sources */,
 				FA4D0A661DEEB9960038244B /* DownloadProgressBarViewController.m in Sources */,
 				FAF811EA1DEDD3E3007FE470 /* NavigationViewController.m in Sources */,
 				FAF811B21DEDCD4D007FE470 /* AppDelegate.m in Sources */,
 				FAF811AF1DEDCD4D007FE470 /* main.m in Sources */,
+				FAFB1CA01DEF038F00E099B1 /* RenderTextViewController.m in Sources */,
 				FA4D0A6B1DEEC50B0038244B /* DownGrayView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
