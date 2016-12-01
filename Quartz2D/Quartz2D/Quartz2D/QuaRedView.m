@@ -31,6 +31,8 @@
     [path addLineToPoint:center];
     
     [path stroke];
+    
+//    [self drawRectangle];
 }
 
 #pragma mark - 画圆角，椭圆
@@ -53,6 +55,14 @@
     UIBezierPath *path = [UIBezierPath bezierPathWithRect:CGRectMake(10, 10, 100, 100)];
     
     [[UIColor yellowColor] setStroke];
+    
+    // 上下文矩阵操作,必须得要在添加路径之前做操作
+    // 平移
+    CGContextTranslateCTM(ctx, 50, 50);
+    // 缩放
+    CGContextScaleCTM(ctx, 0.5, 0.5);
+    // 旋转
+    CGContextRotateCTM(ctx, M_PI_4);
     
     CGContextAddPath(ctx, path.CGPath);
     
