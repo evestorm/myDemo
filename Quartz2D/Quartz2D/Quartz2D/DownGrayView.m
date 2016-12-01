@@ -17,8 +17,12 @@
     // 系统调用drawRect的时候，才会生成跟View相关联上下文
 //    [self drawRect:self.bounds];
     
-    // setNeedDisplay底层会调用drawRect. 系统自动调用
+    // setNeedDisplay底层会调用drawRect. 它并不是立马调用，只是设了一个标志，当下一次屏幕刷新的时候调用
     [self setNeedsDisplay];
+    
+    // 如果创建CADisplayLink (当每一屏幕刷新就会调用 每一秒刷新60)
+//    CADisplayLink *link = [CADisplayLink displayLinkWithTarget:self selector:@selector(update)];
+//    [link addToRunLoop:[NSRunLoop mainRunLoop] forMode:(NSDefaultRunLoopMode)];
 }
 
 
