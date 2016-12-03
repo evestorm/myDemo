@@ -71,7 +71,7 @@
 - (NSArray *)listArray {
     if (!_listArray) {
         _listArray = [[NSArray alloc] init];
-        _listArray = @[@"基本图形绘制",@"进度条(重绘)",@"绘制文字，图片",@"图片加载水印+裁剪图片"];
+        _listArray = @[@"基本图形绘制",@"进度条(重绘)",@"绘制文字，图片",@"图片加载水印+裁剪图片+带边框图片"];
     }
     return _listArray;
 }

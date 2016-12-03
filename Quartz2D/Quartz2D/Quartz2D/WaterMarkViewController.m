@@ -7,6 +7,7 @@
 //
 
 #import "WaterMarkViewController.h"
+#import "UIImage+image.h"
 
 @interface WaterMarkViewController ()
 // uiimageView
@@ -18,7 +19,13 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
-    UIImage *image = [UIImage imageNamed:@"阿狸头像"];
+//    self.imgView.image = [self clipImageAndWaterMarkWith:@"阿狸头像"];
+    self.imgView.image = [UIImage imageWithBorderWidth:10.0 borderColor:[UIColor yellowColor] image:[UIImage imageNamed:@"阿狸头像"]];
+}
+
+/** 带水印图像裁剪*/
+- (UIImage *)clipImageAndWaterMarkWith:(NSString *)imageName {
+    UIImage *image = [UIImage imageNamed:imageName];
     // 生成图片
     // size：开启一个多大的上下文
     // opaque：不透明
@@ -38,13 +45,13 @@
     NSString *str = @"Evestorm";
     [str drawAtPoint:CGPointMake(image.size.width * 0.5, image.size.height * 0.5) withAttributes:@{NSFontAttributeName : [UIFont systemFontOfSize:20],NSForegroundColorAttributeName : [UIColor yellowColor]}];
     
-
+    
     // 生成图片
     UIImage *newImage = UIGraphicsGetImageFromCurrentImageContext();
     // 手动关闭上下文
     UIGraphicsEndImageContext();
     
-    self.imgView.image = newImage;
+    return newImage;
 }
 
 - (void)didReceiveMemoryWarning {
