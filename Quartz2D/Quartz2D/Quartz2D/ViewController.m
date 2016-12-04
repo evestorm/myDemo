@@ -11,6 +11,7 @@
 #import "DownloadProgressBarViewController.h"
 #import "RenderTextViewController.h"
 #import "WaterMarkViewController.h"
+#import "MotionLaunchViewController.h"
 
 @interface ViewController ()<UITableViewDelegate,UITableViewDataSource>
 // tableView
@@ -56,6 +57,9 @@
     } else if (indexPath.row == 3) {
         WaterMarkViewController *waterMark = [[WaterMarkViewController alloc] init];
         [self.navigationController pushViewController:waterMark animated:YES];
+    } else if (indexPath.row == 4) {
+        MotionLaunchViewController *motion = [[MotionLaunchViewController alloc] init];
+        [self.navigationController pushViewController:motion animated:YES];
     }
 }
 
@@ -71,7 +75,7 @@
 - (NSArray *)listArray {
     if (!_listArray) {
         _listArray = [[NSArray alloc] init];
-        _listArray = @[@"基本图形绘制",@"进度条(重绘)",@"绘制文字，图片",@"图片加载水印+裁剪图片+带边框图片"];
+        _listArray = @[@"基本图形绘制",@"进度条(重绘)",@"绘制文字，图片",@"图片加载水印+裁剪图片+带边框图片",@"手势解锁"];
     }
     return _listArray;
 }

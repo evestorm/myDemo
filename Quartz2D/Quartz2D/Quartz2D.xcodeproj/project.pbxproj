@@ -8,6 +8,9 @@
 
 /* Begin PBXBuildFile section */
 		FA041CD21DF2E26100A64134 /* UIImage+image.m in Sources */ = {isa = PBXBuildFile; fileRef = FA041CD11DF2E26100A64134 /* UIImage+image.m */; };
+		FA1252CB1DF3D2B10032FDA1 /* MotionLaunchViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FA1252C91DF3D2B10032FDA1 /* MotionLaunchViewController.m */; };
+		FA1252CC1DF3D2B10032FDA1 /* MotionLaunchViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = FA1252CA1DF3D2B10032FDA1 /* MotionLaunchViewController.xib */; };
+		FA1252CF1DF3DC1F0032FDA1 /* ClockView.m in Sources */ = {isa = PBXBuildFile; fileRef = FA1252CE1DF3DC1F0032FDA1 /* ClockView.m */; };
 		FA4D0A661DEEB9960038244B /* DownloadProgressBarViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FA4D0A641DEEB9960038244B /* DownloadProgressBarViewController.m */; };
 		FA4D0A671DEEB9960038244B /* DownloadProgressBarViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = FA4D0A651DEEB9960038244B /* DownloadProgressBarViewController.xib */; };
 		FA4D0A6B1DEEC50B0038244B /* DownGrayView.m in Sources */ = {isa = PBXBuildFile; fileRef = FA4D0A6A1DEEC50B0038244B /* DownGrayView.m */; };
@@ -51,6 +54,11 @@
 /* Begin PBXFileReference section */
 		FA041CD01DF2E26100A64134 /* UIImage+image.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+image.h"; sourceTree = "<group>"; };
 		FA041CD11DF2E26100A64134 /* UIImage+image.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+image.m"; sourceTree = "<group>"; };
+		FA1252C81DF3D2B10032FDA1 /* MotionLaunchViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MotionLaunchViewController.h; sourceTree = "<group>"; };
+		FA1252C91DF3D2B10032FDA1 /* MotionLaunchViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MotionLaunchViewController.m; sourceTree = "<group>"; };
+		FA1252CA1DF3D2B10032FDA1 /* MotionLaunchViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MotionLaunchViewController.xib; sourceTree = "<group>"; };
+		FA1252CD1DF3DC1F0032FDA1 /* ClockView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ClockView.h; sourceTree = "<group>"; };
+		FA1252CE1DF3DC1F0032FDA1 /* ClockView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ClockView.m; sourceTree = "<group>"; };
 		FA4D0A631DEEB9960038244B /* DownloadProgressBarViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DownloadProgressBarViewController.h; sourceTree = "<group>"; };
 		FA4D0A641DEEB9960038244B /* DownloadProgressBarViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DownloadProgressBarViewController.m; sourceTree = "<group>"; };
 		FA4D0A651DEEB9960038244B /* DownloadProgressBarViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DownloadProgressBarViewController.xib; sourceTree = "<group>"; };
@@ -116,6 +124,18 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		FA1252461DF3C89B0032FDA1 /* 手势解锁 */ = {
+			isa = PBXGroup;
+			children = (
+				FA1252C81DF3D2B10032FDA1 /* MotionLaunchViewController.h */,
+				FA1252C91DF3D2B10032FDA1 /* MotionLaunchViewController.m */,
+				FA1252CA1DF3D2B10032FDA1 /* MotionLaunchViewController.xib */,
+				FA1252CD1DF3DC1F0032FDA1 /* ClockView.h */,
+				FA1252CE1DF3DC1F0032FDA1 /* ClockView.m */,
+			);
+			name = "手势解锁";
+			sourceTree = "<group>";
+		};
 		FA4D0A681DEEB99D0038244B /* 下载进度条(重绘) */ = {
 			isa = PBXGroup;
 			children = (
@@ -164,6 +184,7 @@
 		FAF811AC1DEDCD4D007FE470 /* Quartz2D */ = {
 			isa = PBXGroup;
 			children = (
+				FA1252461DF3C89B0032FDA1 /* 手势解锁 */,
 				FAF8115C1DF010F100EA16CE /* 图片加水印 */,
 				FAFB1C9C1DEF034900E099B1 /* 绘制文字 */,
 				FA4D0A681DEEB99D0038244B /* 下载进度条(重绘) */,
@@ -354,6 +375,7 @@
 				FAF811BA1DEDCD4D007FE470 /* Assets.xcassets in Resources */,
 				FAF811B81DEDCD4D007FE470 /* Main.storyboard in Resources */,
 				FA4D0A671DEEB9960038244B /* DownloadProgressBarViewController.xib in Resources */,
+				FA1252CC1DF3D2B10032FDA1 /* MotionLaunchViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -379,9 +401,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				FAF811ED1DEDD4A8007FE470 /* QuaRedView.m in Sources */,
+				FA1252CB1DF3D2B10032FDA1 /* MotionLaunchViewController.m in Sources */,
 				FAF811E61DEDD246007FE470 /* BaseGraphViewController.m in Sources */,
 				FAF811B51DEDCD4D007FE470 /* ViewController.m in Sources */,
 				FAF811601DF0113000EA16CE /* WaterMarkViewController.m in Sources */,
+				FA1252CF1DF3DC1F0032FDA1 /* ClockView.m in Sources */,
 				FAFB1CA41DEF042F00E099B1 /* RenderTextView.m in Sources */,
 				FA041CD21DF2E26100A64134 /* UIImage+image.m in Sources */,
 				FA4D0A661DEEB9960038244B /* DownloadProgressBarViewController.m in Sources */,
