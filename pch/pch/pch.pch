@@ -31,7 +31,8 @@
 // 发布的时候：
 #ifdef DEBUG // 调试
 
-#define SWLog(...) NSLog(__VA_ARGS__)
+// #define SWLog(...) NSLog(__VA_ARGS__)
+#define SWLog(fmt, ...) NSLog((@"%s [Line %d] " fmt), __PRETTY_FUNCTION__, __LINE__, ##__VA_ARGS__)
 
 #else // 发布
 

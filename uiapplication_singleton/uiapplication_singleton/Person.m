@@ -19,6 +19,7 @@ static Person *_instance = nil;
 + (void)load {
     NSLog(@"%s",__func__);
     
+
     _instance = [[self alloc] init];
 }
 

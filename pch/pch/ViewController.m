@@ -21,7 +21,7 @@
     // [UIImage imageTest];
     
     // NSLog比较耗资源
-    SWLog(@"%s",__func__);
+    SWLog(@"%s", __func__);
 }
 
 
