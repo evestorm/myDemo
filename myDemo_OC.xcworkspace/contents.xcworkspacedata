@@ -2,6 +2,13 @@
 <Workspace
    version = "1.0">
    <Group
+      location = "group:Share(&#x5206;&#x4eab;)"
+      name = "Share(&#x5206;&#x4eab;)">
+      <FileRef
+         location = "group:Share/Share.xcodeproj">
+      </FileRef>
+   </Group>
+   <Group
       location = "group:Quartz2D"
       name = "Quartz2D">
       <FileRef
