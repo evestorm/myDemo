@@ -11,5 +11,11 @@ target 'Share' do
 
     # 集成新浪微博
     pod ‘UMengUShare/Social/Sina'
+    # 集成微信
+    pod ‘UMengUShare/Social/WeChat'
+
+    # 集成QQ
+    pod ‘UMengUShare/Social/QQ'
+
     pod ‘Masonry’
 end

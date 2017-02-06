@@ -3,20 +3,26 @@ PODS:
   - UMengUShare/Core (6.2.2):
     - UMengUShare/Network
   - UMengUShare/Network (6.2.2)
+  - UMengUShare/Social/QQ (6.2.2):
+    - UMengUShare/Core
   - UMengUShare/Social/Sina (6.2.2):
+    - UMengUShare/Core
+  - UMengUShare/Social/WeChat (6.2.2):
     - UMengUShare/Core
   - UMengUShare/UI (6.2.2):
     - UMengUShare/Core
 
 DEPENDENCIES:
   - Masonry
+  - UMengUShare/Social/QQ
   - UMengUShare/Social/Sina
+  - UMengUShare/Social/WeChat
   - UMengUShare/UI
 
 SPEC CHECKSUMS:
   Masonry: 7c429b56da9d4ee0bbb3ed77a5ea710d6a5df39e
   UMengUShare: fc0a98b8d5297632e82874318fd72a10d17da228
 
-PODFILE CHECKSUM: 4a5c4447f452b4a7b4326ecf366dd005d564d003
+PODFILE CHECKSUM: e5ddeae4d1bd9976cf4d7d6fcbde56af5eca6adc
 
 COCOAPODS: 1.1.1
