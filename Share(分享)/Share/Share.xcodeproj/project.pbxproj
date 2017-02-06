@@ -34,6 +34,8 @@
 		B6589D401E4760DB00936594 /* UMSocialNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B6589D2B1E4760DB00936594 /* UMSocialNetwork.framework */; };
 		B6589D411E4760DB00936594 /* UMSocialSDKResources.bundle in Resources */ = {isa = PBXBuildFile; fileRef = B6589D2D1E4760DB00936594 /* UMSocialSDKResources.bundle */; };
 		B6589D421E4760DB00936594 /* UShareUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B6589D2E1E4760DB00936594 /* UShareUI.framework */; };
+		B6FA68BF1E48729A00F22FE7 /* ShareView.m in Sources */ = {isa = PBXBuildFile; fileRef = B6FA68BE1E48729A00F22FE7 /* ShareView.m */; };
+		B6FA68C21E4872EE00F22FE7 /* ShareModel.m in Sources */ = {isa = PBXBuildFile; fileRef = B6FA68C11E4872EE00F22FE7 /* ShareModel.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -92,6 +94,10 @@
 		B6589D2B1E4760DB00936594 /* UMSocialNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = UMSocialNetwork.framework; sourceTree = "<group>"; };
 		B6589D2D1E4760DB00936594 /* UMSocialSDKResources.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = UMSocialSDKResources.bundle; sourceTree = "<group>"; };
 		B6589D2E1E4760DB00936594 /* UShareUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = UShareUI.framework; sourceTree = "<group>"; };
+		B6FA68BD1E48729A00F22FE7 /* ShareView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ShareView.h; sourceTree = "<group>"; };
+		B6FA68BE1E48729A00F22FE7 /* ShareView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ShareView.m; sourceTree = "<group>"; };
+		B6FA68C01E4872EE00F22FE7 /* ShareModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ShareModel.h; sourceTree = "<group>"; };
+		B6FA68C11E4872EE00F22FE7 /* ShareModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ShareModel.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -140,6 +146,7 @@
 		B6589CDD1E4747FD00936594 /* Share */ = {
 			isa = PBXGroup;
 			children = (
+				B6FA68BC1E48726300F22FE7 /* shareView */,
 				B6589CF51E474C5500936594 /* logo_daiyanjie@2x.png */,
 				B6589CE11E4747FD00936594 /* AppDelegate.h */,
 				B6589CE21E4747FD00936594 /* AppDelegate.m */,
@@ -301,6 +308,17 @@
 			path = UMSocialUI;
 			sourceTree = "<group>";
 		};
+		B6FA68BC1E48726300F22FE7 /* shareView */ = {
+			isa = PBXGroup;
+			children = (
+				B6FA68BD1E48729A00F22FE7 /* ShareView.h */,
+				B6FA68BE1E48729A00F22FE7 /* ShareView.m */,
+				B6FA68C01E4872EE00F22FE7 /* ShareModel.h */,
+				B6FA68C11E4872EE00F22FE7 /* ShareModel.m */,
+			);
+			path = shareView;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -379,8 +397,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B6FA68BF1E48729A00F22FE7 /* ShareView.m in Sources */,
 				B6589CE61E4747FD00936594 /* ViewController.m in Sources */,
 				B6589CE31E4747FD00936594 /* AppDelegate.m in Sources */,
+				B6FA68C21E4872EE00F22FE7 /* ShareModel.m in Sources */,
 				B6589CE01E4747FD00936594 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -574,6 +594,7 @@
 				B6589CF41E4747FD00936594 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
