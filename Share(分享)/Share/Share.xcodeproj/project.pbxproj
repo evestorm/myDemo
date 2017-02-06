@@ -14,6 +14,8 @@
 		B6FA68FD1E48A19E00F22FE7 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B6FA68FB1E48A19E00F22FE7 /* Main.storyboard */; };
 		B6FA68FF1E48A19E00F22FE7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B6FA68FE1E48A19E00F22FE7 /* Assets.xcassets */; };
 		B6FA69021E48A19E00F22FE7 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B6FA69001E48A19E00F22FE7 /* LaunchScreen.storyboard */; };
+		B6FA690C1E48BB1400F22FE7 /* ShareView.m in Sources */ = {isa = PBXBuildFile; fileRef = B6FA690B1E48BB1400F22FE7 /* ShareView.m */; };
+		B6FA690F1E48BB5E00F22FE7 /* ShareModel.m in Sources */ = {isa = PBXBuildFile; fileRef = B6FA690E1E48BB5E00F22FE7 /* ShareModel.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,6 +32,10 @@
 		B6FA68FE1E48A19E00F22FE7 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		B6FA69011E48A19E00F22FE7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		B6FA69031E48A19E00F22FE7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B6FA690A1E48BB1400F22FE7 /* ShareView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ShareView.h; sourceTree = "<group>"; };
+		B6FA690B1E48BB1400F22FE7 /* ShareView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ShareView.m; sourceTree = "<group>"; };
+		B6FA690D1E48BB5E00F22FE7 /* ShareModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ShareModel.h; sourceTree = "<group>"; };
+		B6FA690E1E48BB5E00F22FE7 /* ShareModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ShareModel.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -82,6 +88,7 @@
 		B6FA68F11E48A19E00F22FE7 /* Share */ = {
 			isa = PBXGroup;
 			children = (
+				B6FA69091E48BAEF00F22FE7 /* ShareView(分享) */,
 				B6FA68F51E48A19E00F22FE7 /* AppDelegate.h */,
 				B6FA68F61E48A19E00F22FE7 /* AppDelegate.m */,
 				B6FA68F81E48A19E00F22FE7 /* ViewController.h */,
@@ -101,6 +108,17 @@
 				B6FA68F31E48A19E00F22FE7 /* main.m */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		B6FA69091E48BAEF00F22FE7 /* ShareView(分享) */ = {
+			isa = PBXGroup;
+			children = (
+				B6FA690A1E48BB1400F22FE7 /* ShareView.h */,
+				B6FA690B1E48BB1400F22FE7 /* ShareView.m */,
+				B6FA690D1E48BB5E00F22FE7 /* ShareModel.h */,
+				B6FA690E1E48BB5E00F22FE7 /* ShareModel.m */,
+			);
+			path = "ShareView(分享)";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -226,8 +244,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B6FA690C1E48BB1400F22FE7 /* ShareView.m in Sources */,
 				B6FA68FA1E48A19E00F22FE7 /* ViewController.m in Sources */,
 				B6FA68F71E48A19E00F22FE7 /* AppDelegate.m in Sources */,
+				B6FA690F1E48BB5E00F22FE7 /* ShareModel.m in Sources */,
 				B6FA68F41E48A19E00F22FE7 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
