@@ -2,6 +2,13 @@
 <Workspace
    version = "1.0">
    <Group
+      location = "group:&#x5faa;&#x73af;&#x5f15;&#x7528;"
+      name = "&#x5faa;&#x73af;&#x5f15;&#x7528;">
+      <FileRef
+         location = "group:&#x5faa;&#x73af;&#x5f15;&#x7528;/&#x5faa;&#x73af;&#x5f15;&#x7528;.xcodeproj">
+      </FileRef>
+   </Group>
+   <Group
       location = "group:Share(&#x5206;&#x4eab;)"
       name = "Share(&#x5206;&#x4eab;)">
       <FileRef
